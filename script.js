@@ -12,32 +12,30 @@ let pricing = "month";
 
 bouton.addEventListener("click", function(){
     if (pricing === "month"){
-        tarifBasic.innerHTML = "$199,99";
-        tarifProfessional.innerHTML = "$249,99";
-        tarifMaster.innerHTML = "$399,99";
-       /*  gauche.style.backgroundColor = "#364F6B";
-        gauche.style.color = "#F7DB69";
-        droite.style.backgroundColor = "#364F6B";
-        droite.style.color = "#F7DB69";
-        centre.style.backgroundColor = "#3FC1C9";
-        centre.style.color = "#364F6B"; */
-        //document.body.style.backgroundColor = "#A12568";   
+        tarifBasic.innerHTML = "$199.99";
+        tarifBasic.style.transform = "rotateY(-360deg) scale(1.3)";
+        tarifBasic.style.transition ="transform 1s";
+        tarifProfessional.style.transform = "rotateY(-360deg) scale(1.3)";
+        tarifProfessional.style.transition ="transform 1s";
+        tarifMaster.style.transform = "rotateY(-360deg) scale(1.3)";
+        tarifMaster.style.transition ="transform 1s";
+        tarifProfessional.innerHTML = "$249.99";
+        tarifMaster.innerHTML = "$399.99";  
         pricing = "year";
     }
 
     
 
     else {
-        tarifBasic.innerHTML = "$19,99";
-        tarifProfessional.innerHTML = "$24,99";
-        tarifMaster.innerHTML = "$39,99"; 
-       /*  gauche.style.backgroundColor = "#3FC1C9";
-        gauche.style.color = "#364F6B";
-        droite.style.backgroundColor = "#3FC1C9";
-        droite.style.color = "#364F6B";
-        centre.style.backgroundColor = "#364F6B";
-        //document.body.style.backgroundColor = "#FEC260";  
-        centre.style.color = "#F7DB69";  */
+        tarifBasic.innerHTML = "$19.99";
+        tarifBasic.style.transform = "rotateY(360deg)";
+        tarifBasic.style.transition ="transform 1s";
+        tarifProfessional.style.transform = "rotateY(360deg)";
+        tarifProfessional.style.transition ="transform 1s";
+        tarifMaster.style.transform = "rotateY(360deg)";
+        tarifMaster.style.transition ="transform 1s";
+        tarifProfessional.innerHTML = "$24.99";
+        tarifMaster.innerHTML = "$39.99"; 
         pricing = "month";
 
     }    
